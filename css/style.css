@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+ul li::after{
+    content: ''!important;
+    width: 0%!important;
+    height: 2px!important;
+    background: #92403a!important;
+    display: block!important;
+    margin: auto!important;
+    transition: 0.5s!important;
+}
+ul li:hover::after{
+    width: 80%!important;
+}
+
+.landing {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.7)), url(../images/background1.jpg);
+    background-color: #f8dfdb;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+
+.landing h1{
+    font-size: 200%!important;
+    font-weight: 700;
+}
+.landing h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@media (max-width: 769px) {
+    .landing h1{
+        font-size: 50px;
+    }
+    ul li::after{
+        display: none!important;
+    }
+   .view-card {
+    width: 100%!important;
+    padding-bottom: 100px!important;
+   }
+   .post-cont{
+    padding-top: 50px!important;
+}
+}
+
+.landing h5{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.card{
+    background: linear-gradient(to right, #0f0f13e8, #030101be);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.form-body{
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 10px 15px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.form-img{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.7)), url(../images/bg-side-img.jpg);
+    background-size: cover;
+    border-radius: 5px 10px 10px 5px;
+    box-shadow: 10px 15px 15px rgba(0,0,0,0.1);
+}
+
+.form-img-text{
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 150px;
+    text-shadow: 15px 10px 10px rgba(0,0,0,0.5);
+}
+
+
+.post-cont{
+    padding-top: 150px;
+}
+
+@media (max-width: 769px) {
+    
+    .row{
+        width: 100%;
+        padding: 0px!important;
+        margin: 0px;
+    }
+    .form-body {
+        border-radius: 10px;
+        width: 100%!important;
+    }
+    .form-img{
+        display: none;
+       
+    }
+
+    .outer-body{
+        padding: 0px!important;
+    }
+}
+    
+@media (max-width:426px) {
+    footer .container{ 
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+

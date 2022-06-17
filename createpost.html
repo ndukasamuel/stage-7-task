@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Create Post</title>
+</head>
+
+<body style="background-color: #FFF2F2;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 fw-bold" href="index.html">Presh Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="index.html">HOME</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark fw-bold" href="view.html">VIEW POST</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark fw-bold" href="post.html">POST</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container pt-4">
+        <h1>Create a Post</h1>
+        <div class="row">
+            <div class="col-lg-6 form-img">
+                <h1 class="text-center form-img-text text-light">Create a new post about Chulela's krib</h1>
+            </div>
+            <div class="col-lg-6 outer-body pe-0">
+                <div class="form-body h-100">
+                    <form action="" id="post-form">
+                        <label for="" class="form-label">Name</label> <br>
+                        <input type="text" name="" id="post-name" required class="form-control"
+                            placeholder="Enter your name"> <br>
+                        <label for="" class="form-label">Post Title</label> <br>
+                        <input type="text" name="" id="title" required class="form-control" placeholder="Post title">
+                        <br>
+                        <label for="" class="form-label"> Post Body</label> <br>
+                        <textarea name="" id="body" rows="5" class="form-control" required
+                            placeholder="Write your post"></textarea>
+                        <button class="btn btn-primary mt-4" type="submit">Create Post</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <h1 class="text-center pt-5">Check out other posts</h1>
+        <div class="card-section mt-5">
+            <div class="row" id="post-holder">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>1</p>
+                            <h6 id="post-title">post title</h6>
+                            <p id="post-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+                                cupiditate laborum,
+                                soluta debitis iure dolore iusto adipisci optio ipsam, sint amet dolorem possimus
+                                voluptatum. Voluptate cumque possimus autem alias maiores.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="view.html" class="btn btn-primary">View Post</a>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-secondary">
+        <div class="container d-flex justify-content-between pt-3">
+            <div>
+                <p class="text-black fw-bold">@Presh Blog
+                    <br> Home of quality contents
+                </p>
+            </div>
+            <div class="text-center">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li> <a href="https://www.facebook.com/ikpa.precious"> <i
+                                class="bi bi-facebook text-black ms-3"></i></a></li>
+                    <li> <a href="https://twitter.com/PreciousIkpa"> <i class="bi bi-twitter text-black ms-3"></i></a>
+                    </li>
+                    <li> <a href="https://www.linkedin.com/in/ikpa-precious-475675166/"> <i
+                                class="bi bi-linkedin text-black ms-3"></i></a></li>
+                    <li> <a href="https://github.com/Masterprecie"> <i class="bi bi-github text-black ms-3"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>Designed by Ikpa Precious </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
